@@ -2,6 +2,7 @@
 import { Carousel } from "flowbite-react";
 import React from "react";
 import Image from "next/image";
+import { Card } from "flowbite-react";
 import carousel1 from "../../../public/images/carousel1.jpg";
 import carousel2 from "../../../public/images/carousel2.jpg";
 import carousel3 from "../../../public/images/carousel3.jpg";
@@ -30,7 +31,7 @@ export default function HomePage() {
               <div className="flex h-full relative ">
                 <Image src={carousel1} alt="..." className="w-full"></Image>
                 <div className="border-0">
-                  <h1 className="font-bold text-lg h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
+                  <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
                     We are always ready to support you
                   </h1>
                 </div>
@@ -39,16 +40,16 @@ export default function HomePage() {
               <div className="flex h-full relative">
                 <Image src={carousel2} alt="..." className="w-full"></Image>
                 <div className="border-0">
-                  <h1 className="font-bold text-lg h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
+                  <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
                     Reaching Out to All Indonesian Farmers
                   </h1>
                 </div>
               </div>
 
               <div className="flex h-full relative">
-                <Image src={carousel3} alt="..." className="w-full"/>
+                <Image src={carousel3} alt="..." className="w-full" />
                 <div className="border-0">
-                  <h1 className="font-bold text-lg h-fit lg:text-5xl text-black absolute right-10 top-24 lg:right-20 lg:top-80">
+                  <h1 className="font-bold text-base h-fit lg:text-5xl text-black absolute right-10 top-24 lg:right-20 lg:top-80">
                     7 SOUND Co-Working Space
                   </h1>
                 </div>
@@ -60,11 +61,11 @@ export default function HomePage() {
       {/* Banner end */}
 
       {/* About Us start */}
-      <section id="about us" className="pt-20 px-10 lg:px-20">
+      <section id="about us" className="pt-16 lg:pt-20 px-10 lg:px-20">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full px-4 lg:w-1/2">
-              <h2 className="font-bold text-red-600 text-lg pt-10 mb-5 lg:text-xl">
+              <h2 className="font-bold text-red-600 text-lg lg:pt-10 mb-5 lg:text-xl">
                 {" "}
                 ABOUT US
               </h2>
@@ -75,7 +76,7 @@ export default function HomePage() {
             </div>
 
             <div className="w-full px-4 mb-10 lg:w-1/2">
-              <p className="text-sm lg:text-xl text-gray-500 pb-9 lg:pb-20">
+              <p className="text-base lg:text-xl text-gray-500 pb-9 lg:pb-20">
                 PT EAST WEST SEED INDONESIA (EWINDO) is the first integrated
                 vegetable seed company in Indonesia which keeping its commitment
                 as Farmers Best Friend. EWINDO produces the best of high quality
@@ -96,7 +97,7 @@ export default function HomePage() {
       {/* About Us start */}
 
       {/* Site Carousel start*/}
-      <section className="pt-32">
+      <section className="pt-4 lg:pt-32">
         <div>
           <div className="h-56  w-screen sm:h-64 xl:px-20 xl:h-[480px] 2xl:h-[480px]">
             <Carousel slide={false}>
@@ -106,7 +107,7 @@ export default function HomePage() {
                   alt="..."
                   className="w-full xl:h-[450px]"
                 />
-                <p className="pt-3 text-sm lg:text-base">
+                <p className="pt-3 text-base font-bold lg:text-lg">
                   ------ Purwakarta Site (foto udara) ------
                 </p>
               </div>
@@ -117,7 +118,7 @@ export default function HomePage() {
                   alt="..."
                   className="w-full xl:h-[450px]"
                 ></Image>
-                <p className="pt-3 text-sm lg:text-base">
+                <p className="pt-3 text-base font-bold lg:text-lg">
                   ------ Lembang Site ------
                 </p>
               </div>
@@ -128,7 +129,7 @@ export default function HomePage() {
                   alt="..."
                   className="w-full xl:h-[450px]"
                 ></Image>
-                <p className="pt-3 text-sm lg:text-base">
+                <p className="pt-3 text-base font-bold lg:text-lg">
                   ------ Wanayasa Site ------
                 </p>
               </div>
@@ -139,9 +140,9 @@ export default function HomePage() {
       {/* Site Carousel end*/}
 
       {/* Quotes start recomendation images width="1600" height="800"*/}
-      <section className="pt-32">
+      <section className="pt-12 lg:pt-32">
         <div
-          className="flex justify-center items-center flex-wrap px-10 lg:px-40 text-center w-full h:auto text-sm lg:text-2xl h-[300px]"
+          className="flex justify-center items-center flex-wrap px-10 lg:px-40 text-center w-full h:auto text-base lg:text-2xl h-[300px]"
           style={{ backgroundImage: "url(/images/background-quotes.png)" }}
         >
           For more than three decades, EWINDO always provides healthy seeds with
@@ -153,28 +154,33 @@ export default function HomePage() {
       {/* Quotes end*/}
 
       {/* Product start */}
-      <section>
+      <section className="pb-10">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-base font-bold pt-8 text-red-600">
+          <p className="text-base pt-10 lg:text-3xl font-bold lg:pt-20 text-red-600">
             THE BEST SEED PRODUCTS
           </p>
-          <p className="text-4xl font-bold">Our Best Products</p>
+          <p className="text-4xl lg:text-6xl font-bold lg:pt-3">
+            Our Best Products
+          </p>
         </div>
 
-        <div className="h-56 sm:h-64 xl:h-[600px] 2xl:h-[600px]">
+        <div className="pt-5 h-[900px] lg:h-[620px]">
           <Carousel slide={false}>
+            {/* Semangka */}
             <div className="container">
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-xl mt-20 pb-5">
+                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       WATERMELON
                     </p>
-                    <p className="font-bold text-6xl pb-5">AMARA F1</p>
-                    <p className="font-bold text-2xl pb-5">
+                    <p className="font-bold text-4xl pb-2 px-5 lg:text-6xl lg:pb-5">
+                      AMARA F1
+                    </p>
+                    <p className="font-bold text-lg pb-2 px-5 lg:text-2xl lg:pb-5">
                       Watermelon Suggestion for Indonesian Farmers
                     </p>
-                    <p className="text-sm lg:text-xl text-gray-500 p:15 pb-5 lg:pb-20">
+                    <p className="text-base lg:text-xl text-gray-500 px-5 pb-10 lg:p-15 lg:pb-20">
                       Hybrid watermelon belongs to the seedless type with a
                       rounded (oval-ish) shape. The variety is suitable in
                       lowland areas, with vigorous, easy-to-fruit produce. The
@@ -186,8 +192,8 @@ export default function HomePage() {
                     </p>
 
                     <Link
-                      href="#"
-                      className="text-base font-semibold text-white bg-green-800 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
+                      href="/product"
+                      className="text-base font-semibold mx-5 text-white bg-green-800 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
                     >
                       View Product
                     </Link>
@@ -201,15 +207,18 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Tomat */}
             <div className="container">
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-xl mt-20 pb-5">
+                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       TOMATO
                     </p>
-                    <p className="font-bold text-6xl pb-5">SERVO F1</p>
-                    <p className="text-sm lg:text-xl text-gray-500 p:15 pb-5 lg:pb-20">
+                    <p className="font-bold text-4xl px-5 pb-2 lg:text-6xl lg:pb-5">
+                      SERVO F1
+                    </p>
+                    <p className="text-base pb-10 px-5 lg:text-xl text-gray-500 lg:pb-16">
                       SERVO F1 Tomato, an ideal choice for cultivation in low to
                       medium altitude areas. This high-yielding variety is
                       characterized by its firm and round fruits, with an
@@ -227,8 +236,8 @@ export default function HomePage() {
                     </p>
 
                     <Link
-                      href="#"
-                      className="text-base font-semibold text-white bg-green-800 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
+                      href="/product"
+                      className="text-base font-semibold text-white bg-green-800 mx-5 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
                     >
                       View Product
                     </Link>
@@ -242,18 +251,21 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Bird Pepper */}
             <div className="container">
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-xl mt-20 pb-5">
+                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       BIRD PEPPER
                     </p>
-                    <p className="font-bold text-6xl pb-5">PELITA F1</p>
-                    <p className="font-bold text-2xl pb-5">
+                    <p className="font-bold text-4xl px-5 pb-2 lg:text-6xl lg:pb-5">
+                      PELITA F1
+                    </p>
+                    <p className="font-bold text-lg px-5 pb-2 lg:text-2xl lg:pb-5">
                       Bird Pepper of Indonesian Farmer
                     </p>
-                    <p className="text-sm lg:text-xl text-gray-500 p:15 pb-5 lg:pb-20">
+                    <p className="text-base pb-10 px-5 lg:text-xl text-gray-500 lg:pb-16">
                       A semi-upright plant with dense and fast fruiting. It
                       belongs to the C. annuum fruit type, with shiny green
                       fruits that are moderately large. It is harvested while
@@ -263,8 +275,8 @@ export default function HomePage() {
                     </p>
 
                     <Link
-                      href="#"
-                      className="text-base font-semibold text-white bg-green-800 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
+                      href="/product"
+                      className="text-base font-semibold text-white bg-green-800 mx-5 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
                     >
                       View Product
                     </Link>
@@ -278,18 +290,21 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Choisum */}
             <div className="container">
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-xl mt-20 pb-5">
+                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       CHOISUM
                     </p>
-                    <p className="font-bold text-6xl pb-5">SHINTA F1</p>
-                    <p className="font-bold text-2xl pb-5">
+                    <p className="font-bold text-4xl px-5 pb-2 lg:text-6xl lg:pb-5">
+                      SHINTA F1
+                    </p>
+                    <p className="font-bold text-lg px-5 pb-2 lg:text-2xl lg:pb-5">
                       Broad Leaf Indeed!
                     </p>
-                    <p className="text-sm lg:text-xl text-gray-500 p:15 pb-5 lg:pb-20">
+                    <p className="text-base px-5 pb-10 lg:text-xl text-gray-500 lg:pb-20">
                       SHINTA F1 is a large-stemmed choy sum green variety with
                       broad leaves. It is suitable for cultivation in low to
                       medium-altitude areas and has large stem diameters, as
@@ -300,8 +315,8 @@ export default function HomePage() {
                     </p>
 
                     <Link
-                      href="#"
-                      className="text-base font-semibold text-white bg-green-800 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
+                      href="/product"
+                      className="text-base font-semibold text-white bg-green-800 mx-5 mt-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
                     >
                       View Product
                     </Link>
@@ -315,41 +330,47 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Cucumber */}
             <div className="container">
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-xl mt-20 pb-3">
+                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-3">
                       CUCUMBER
                     </p>
-                    <p className="font-bold text-6xl pb-3">ZATAVY F1</p>
-                    <p className="font-bold text-2xl pb-3">Easy Maintenance</p>
-                    <div>
-                    <p className="text-sm lg:text-xl text-gray-500 p:15 lg:pb-7">
-                      A large-sized hybrid cucumber that is easy to maintain.
-                      The plant is resistant to geminivirus (ToLCNDV), highly
-                      vigorous, and has easy climbing ability. The fruit has
-                      dark green skin with a length of approximately 25 cm and
-                      weighs around 270 g per fruit. It requires easy
-                      maintenance, has a long shelf life, and offers high
-                      production. Suitable for cultivation in low to
-                      medium-altitude areas. Harvesting can begin 34 days after
-                      transplanting (HST).
+                    <p className="font-bold text-4xl px-5 pb-2 xl:text-6xl xl:pb-3">
+                      ZATAVY F1
                     </p>
-                    <p className="font-bold">Plant Tips:</p>
+                    <p className="font-bold text-lg px-5 pb-2 lg:text-2xl lg:pb-3">
+                      Easy Maintenance
+                    </p>
+                    <div>
+                      <p className="text-base px-5 pb-2 lg:text-xl  text-gray-500 lg:pb-7">
+                        A large-sized hybrid cucumber that is easy to maintain.
+                        The plant is resistant to geminivirus (ToLCNDV), highly
+                        vigorous, and has easy climbing ability. The fruit has
+                        dark green skin with a length of approximately 25 cm and
+                        weighs around 270 g per fruit. It requires easy
+                        maintenance, has a long shelf life, and offers high
+                        production. Suitable for cultivation in low to
+                        medium-altitude areas. Harvesting can begin 34 days
+                        after transplanting (HST).
+                      </p>
+                      <p className="font-bold text-base lg:text-xl px-5">
+                        Plant Tips:
+                      </p>
 
-                      <p className="pb-7">
+                      <p className=" text-base pb-5 px-5 lg:text-xl lg:pb-7 text-gray-500">
                         To maximize fruit production, it is recommended to use
                         trellises or supports shaped like a pergola because the
-                        plants growth is highly vigorous and produces many
-                        upper fruits.
+                        plants growth is highly vigorous and produces many upper
+                        fruits.
                       </p>
                     </div>
-                    
-                    
+
                     <Link
-                      href="#"
-                      className="text-base font-semibold text-white bg-green-800 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
+                      href="/product"
+                      className="text-base font-semibold text-white bg-green-800 mx-5 py-3 px-8 hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out"
                     >
                       View Product
                     </Link>
@@ -366,6 +387,64 @@ export default function HomePage() {
         </div>
       </section>
       {/* Product end */}
+
+      {/* Testimonial start*/}
+      <section className=" pb-16 lg:px-20 lg:pb-24">
+        <div className="container">
+          <div className="flex justify-center items-center">
+            <h1 className="font-bold lg:text-3xl lg:pb-5">Testimonials</h1>
+          </div>
+
+          <div className="flex flex-wrap gap-5 justify-center items-center">
+           
+              {/* Tertimoni 1 */}
+              <Card className="max-w-sm">
+                <iframe
+                  className="w-full"
+                  height="200"
+                  src="https://www.youtube.com/embed/XoFhEqWCEdg?si=_ZfswghtZi7TWXE_"
+                  title="Embedded YouTube Video"
+                ></iframe>
+                <div className="p-4">
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                  Berkah Saat Menjadi Petani Jagung Manis – Kisah Sukses NB SUPER F1 
+                  </p>
+                </div>
+              </Card>
+
+              {/* Testimoni 2 */}
+              <Card className="max-w-sm">
+                <iframe
+                  className="w-full"
+                  height="200"
+                  src="https://www.youtube.com/embed/R_isYzLZWB4?si=aLmOPSrr_ZzHfpdz"
+                  title="Embedded YouTube Video"
+                ></iframe>
+                <div className="p-4">
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                  Menjadi Berkah Untuk Warga Karena Sukses Tanam Cabai BAJA F1
+                  </p>
+                </div>
+              </Card>
+              {/* Testimoni 3 */}
+              <Card className="max-w-sm">
+                <iframe
+                  className="w-full"
+                  height="200"
+                  src="https://www.youtube.com/embed/FbD89wBs8TM?si=bXNtHQNLby1FNIbr"
+                  title="Embedded YouTube Video"
+                ></iframe>
+                <div className="p-4">
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                  Kisah Sukses Petani Budidaya Bawang Merah Dari Biji (TSS) 
+                  </p>
+                </div>
+              </Card>
+
+          </div>
+        </div>
+      </section>
+      {/* Testimonial end*/}
     </div>
   );
 }

@@ -84,8 +84,7 @@ export default function AboutUs() {
           <div className="flex flex-wrap">
             <div
               className="w-full flex flex-wrap justify-center"
-              style={{ alignItems: "stretch" }}
-            >
+              style={{ alignItems: "stretch" }}>
               {/* value 1 */}
               <div className="p-4 md:w-1/3">
                 <div className="rounded-md shadow-md overflow-hidden">
@@ -150,7 +149,7 @@ export default function AboutUs() {
       <section className="lg:px-64 pt">
         <div className="flex justify-center items-center" style={{ padding: '64px', maxWidth: '100%' }}>
           <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
-            <iframe
+            <iframe loading="lazy"
             src="https://www.youtube.com/embed/t52Qaf0Nm1k?si=mJZeNbWUtfGaNd5K"
             style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
             allow="autoplay; encrypted-media"
