@@ -159,7 +159,7 @@ export default function HomePage() {
           <p className="text-base pt-10 lg:text-3xl font-bold lg:pt-20 text-red-600">
             THE BEST SEED PRODUCTS
           </p>
-          <p className="text-4xl lg:text-6xl font-bold lg:pt-3">
+          <p className="text-3xl lg:text-6xl font-bold lg:pt-3">
             Our Best Products
           </p>
         </div>
@@ -171,13 +171,13 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
+                    <p className="text-red-600 font-bold text-base px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       WATERMELON
                     </p>
-                    <p className="font-bold text-4xl pb-2 px-5 lg:text-6xl lg:pb-5">
+                    <p className="font-bold text-3xl pb-2 px-5 lg:text-6xl lg:pb-5">
                       AMARA F1
                     </p>
-                    <p className="font-bold text-lg pb-2 px-5 lg:text-2xl lg:pb-5">
+                    <p className="font-bold text-base pb-2 px-5 lg:text-2xl lg:pb-5">
                       Watermelon Suggestion for Indonesian Farmers
                     </p>
                     <p className="text-base lg:text-xl text-gray-500 px-5 pb-10 lg:p-15 lg:pb-20">
@@ -202,7 +202,7 @@ export default function HomePage() {
                 <Image
                   src={watermelon}
                   alt="..."
-                  className="h-auto w-[550px]"
+                  className="w-[300px] h-auto lg:w-[550px]"
                 />
               </div>
             </div>
@@ -212,10 +212,10 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
+                    <p className="text-red-600 font-bold text-base px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       TOMATO
                     </p>
-                    <p className="font-bold text-4xl px-5 pb-2 lg:text-6xl lg:pb-5">
+                    <p className="font-bold text-3xl px-5 pb-2 lg:text-6xl lg:pb-5">
                       SERVO F1
                     </p>
                     <p className="text-base pb-10 px-5 lg:text-xl text-gray-500 lg:pb-16">
@@ -246,7 +246,7 @@ export default function HomePage() {
                 <Image
                   src={tomato}
                   alt="..."
-                  className="h-auto w-[550px]"
+                  className="w-[300px] h-auto lg:w-[550px]"
                 ></Image>
               </div>
             </div>
@@ -256,13 +256,13 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
+                    <p className="text-red-600 font-bold text-base px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       BIRD PEPPER
                     </p>
-                    <p className="font-bold text-4xl px-5 pb-2 lg:text-6xl lg:pb-5">
+                    <p className="font-bold text-3xl px-5 pb-2 lg:text-6xl lg:pb-5">
                       PELITA F1
                     </p>
-                    <p className="font-bold text-lg px-5 pb-2 lg:text-2xl lg:pb-5">
+                    <p className="font-bold text-base px-5 pb-2 lg:text-2xl lg:pb-5">
                       Bird Pepper of Indonesian Farmer
                     </p>
                     <p className="text-base pb-10 px-5 lg:text-xl text-gray-500 lg:pb-16">
@@ -285,7 +285,7 @@ export default function HomePage() {
                 <Image
                   src={pepper}
                   alt="..."
-                  className="h-auto w-[550px]"
+                  className="w-[300px] h-auto lg:w-[550px]"
                 ></Image>
               </div>
             </div>
@@ -295,13 +295,13 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
+                    <p className="text-red-600 font-bold text-base px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-5">
                       CHOISUM
                     </p>
-                    <p className="font-bold text-4xl px-5 pb-2 lg:text-6xl lg:pb-5">
+                    <p className="font-bold text-3xl px-5 pb-2 lg:text-6xl lg:pb-5">
                       SHINTA F1
                     </p>
-                    <p className="font-bold text-lg px-5 pb-2 lg:text-2xl lg:pb-5">
+                    <p className="font-bold text-base px-5 pb-2 lg:text-2xl lg:pb-5">
                       Broad Leaf Indeed!
                     </p>
                     <p className="text-base px-5 pb-10 lg:text-xl text-gray-500 lg:pb-20">
@@ -325,7 +325,7 @@ export default function HomePage() {
                 <Image
                   src={choisum}
                   alt="..."
-                  className="h-auto w-[550px]"
+                  className="w-[300px] h-auto lg:w-[550px]"
                 ></Image>
               </div>
             </div>
@@ -335,13 +335,13 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-between">
                 <div className=" w-full lg:w-1/2">
                   <div>
-                    <p className="text-red-600 font-bold text-lg px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-3">
+                    <p className="text-red-600 font-bold text-base px-5 pb-2 lg:text-xl lg:mt-20 lg:pb-3">
                       CUCUMBER
                     </p>
-                    <p className="font-bold text-4xl px-5 pb-2 xl:text-6xl xl:pb-3">
+                    <p className="font-bold text-3xl px-5 pb-2 xl:text-6xl xl:pb-3">
                       ZATAVY F1
                     </p>
-                    <p className="font-bold text-lg px-5 pb-2 lg:text-2xl lg:pb-3">
+                    <p className="font-bold text-base px-5 pb-2 lg:text-2xl lg:pb-3">
                       Easy Maintenance
                     </p>
                     <div>
@@ -379,7 +379,7 @@ export default function HomePage() {
                 <Image
                   src={cucumber}
                   alt="..."
-                  className="h-auto w-[550px]"
+                  className="w-[300px] h-auto lg:w-[550px]"
                 ></Image>
               </div>
             </div>

@@ -23,7 +23,7 @@ export default function FooterBar() {
                 </p>
               </div>
 
-              <div className="flex flex-col lg:flex-col lg: w-1/3">
+              <div className="flex flex-col lg:flex-col lg:w-1/3">
                 <p className="text-sm text-gray-500">+62 264 201871</p>
                 <p className="text-sm text-gray-500">+62 22 3000 2010</p>
                 <p className="text-sm text-gray-500">+62 264 201875</p>
