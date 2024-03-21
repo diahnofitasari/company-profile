@@ -1,11 +1,12 @@
 {
-  "extends": "next/core-web-vitals",
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "no-undef": ["error", { "typeof": true }],
-    "no-unused-vars": "off", // Jika ada peringatan tentang variabel tidak terpakai (tambahan)
-  },
-  "globals": {
-    "window": true // Untuk memperbolehkan penggunaan window (tambahan)
+    "quotes": ["error", "double"], // Atur penggunaan kutip ganda
+    // Tambahkan aturan lain yang diperlukan
   }
 }
-

@@ -11,7 +11,7 @@ interface IMember {
 
 export default async function Teams() {
   const teams: IMember = await getTeams();
-  console.log(teams)
+  // console.log(teams.results[0].name)
 
   return (
     <div>
