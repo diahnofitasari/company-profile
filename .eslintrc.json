@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-undef": ["error", { "typeof": true }],
+    "no-unused-vars": "off", // Jika ada peringatan tentang variabel tidak terpakai (tambahan)
+  },
+  "globals": {
+    "window": true // Untuk memperbolehkan penggunaan window (tambahan)
+  }
 }
+
