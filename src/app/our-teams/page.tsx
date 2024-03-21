@@ -5,9 +5,13 @@ import Link from "next/link";
 import { getTeams } from "@/lib/teams";
 import { ITeams } from "@/type/type";
 
+interface IMember {
+  results : ITeams []
+}
+
 export default async function Teams() {
-  const teams: ITeams[] = await getTeams();
-  // console.log(teams.results[0].id)
+  const teams: IMember = await getTeams();
+  console.log(teams)
 
   return (
     <div>
