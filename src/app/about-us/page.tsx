@@ -1,3 +1,6 @@
+"use client";
+import { Button, Timeline } from "flowbite-react";
+import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 import Image from "next/image";
 import office from "../../../public/images/office.jpg";
 import value1 from "../../../public/images/value1.png";
@@ -7,7 +10,7 @@ import value3 from "../../../public/images/value3.png";
 export default function AboutUs() {
   return (
     <div>
-      {/* Company Profile */}
+      {/* Company Profile start */}
       <section className="pt-20">
         <div className="container">
           <div className="flex flex-col w-screen justify-center items-center">
@@ -15,10 +18,6 @@ export default function AboutUs() {
               <h1 className="font-bold text-2xl lg:text-4xl px-4">
                 PT EAST WEST SEED INDONESIA
               </h1>
-            </div>
-
-            <div>
-              <p className="text-base pt-3">Share to:</p>
             </div>
 
             <div className="pt-20">
@@ -43,13 +42,126 @@ export default function AboutUs() {
                 achieve good results aligning with the consumers wants and to
                 become the key to success for INDONESIAN FARMERS.
               </p>
+
+              <p className="text-base text-justify pt-5 relative">
+                Research and development of new superior varieties, seed
+                production, seed processing, storage, packaging, customer order
+                handling, and seed distribution are closely monitored in
+                accordance with the requirements of the ISO 9001:2000 Quality
+                Management System and LSSM-BTPH.
+              </p>
             </div>
           </div>
         </div>
       </section>
+      {/* Company Profile end */}
 
-      {/* Visi dan Misi*/}
-      <section className="pt-16 px-10 lg:px-64">
+      {/* Milestone start */}
+      <section className="px-10 pt-10 lg:pt-16 lg:px-64">
+        <h1 className="font-bold pb-5 text-3xl flex justify-center items-center">Milestone</h1>
+        <Timeline>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                1982
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                The company is privately owned, founded in 1982 by Simon Groot,
+                a sixth generation seedsman from the Netherlands.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                June 6, 1990
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                PT. East West Seed Indonesia was built in Benteng Village,
+                Campaka District - Purwakarta, West Java.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                April 1, 1991
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                Building a branch of Farm Research And Development in Tugu Mukti
+                Village, Cisarua District, Bandung Regency.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                June 11, 1991
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                Officially inaugurated by the Minister of Agriculture of
+                Indonesia (Ir. Wardoyo).
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                1995
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                Releasing a tomato seed variety named 'Arthaloka' that is
+                tolerant to Bacterial Wilt disease and Late Blight.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                1995
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                Building a research and development center for midland crop
+                plants in Wanayasa, Purwakarta.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                1996
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                Building a plant disease laboratory and tissue culture facility
+                at Purwakarta.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
+              <Timeline.Time className="font-bold text-base text-black">
+                2003
+              </Timeline.Time>
+              <Timeline.Body className="text-base text-black">
+                Building production offices, QA laboratories, and warehouses in
+                Jember, East Java.
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+        </Timeline>
+      </section>
+      {/* Milestone end */}
+
+      {/* Visi dan Misi start*/}
+      <section className="px-10 lg:pt-10 lg:px-64">
         <div className="container">
           <div className="flex flex-wrap justify-between">
             {/* Bagian Kiri */}
@@ -73,8 +185,9 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+      {/* Visi dan Misi end*/}
 
-      {/* Company Values */}
+      {/* Company Values start*/}
       <section className="pt-16 px-10 lg:px-64">
         <div className="container">
           <div className="flex justify-center items-center">
@@ -84,7 +197,8 @@ export default function AboutUs() {
           <div className="flex flex-wrap">
             <div
               className="w-full flex flex-wrap justify-center"
-              style={{ alignItems: "stretch" }}>
+              style={{ alignItems: "stretch" }}
+            >
               {/* value 1 */}
               <div className="p-4 md:w-1/3">
                 <div className="rounded-md shadow-md overflow-hidden">
@@ -144,19 +258,37 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+      {/* Company Values end*/}
 
-      {/* Video Profile */}
-      <section className="lg:px-64 pt">
-        <div className="flex justify-center items-center" style={{ padding: '64px', maxWidth: '100%' }}>
-          <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
-            <iframe loading="lazy"
-            src="https://www.youtube.com/embed/t52Qaf0Nm1k?si=mJZeNbWUtfGaNd5K"
-            style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-            allow="autoplay; encrypted-media"
+      {/* Video Profile start*/}
+      <section className="lg:px-64">
+        <div
+          className="flex justify-center items-center"
+          style={{ padding: "64px", maxWidth: "100%" }}
+        >
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              paddingTop: "56.25%",
+            }}
+          >
+            <iframe
+              loading="lazy"
+              src="https://www.youtube.com/embed/t52Qaf0Nm1k?si=mJZeNbWUtfGaNd5K"
+              style={{
+                position: "absolute",
+                top: "0",
+                left: "0",
+                width: "100%",
+                height: "100%",
+              }}
+              allow="autoplay; encrypted-media"
             ></iframe>
           </div>
         </div>
       </section>
+      {/* Video Profile end*/}
     </div>
   );
 }
