@@ -29,7 +29,7 @@ export default function HomePage() {
               onSlideChange={(index) => console.log("onSlideChange()", index)}
             >
               <div className="flex h-full relative ">
-                <Image src={carousel1} alt="..." className="w-full"></Image>
+                <Image src={carousel1} alt="..." className="w-full" priority/>
                 <div className="border-0">
                   <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
                     We are always ready to support you
@@ -38,7 +38,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex h-full relative">
-                <Image src={carousel2} alt="..." className="w-full"></Image>
+                <Image src={carousel2} alt="..." className="w-full" priority/>
                 <div className="border-0">
                   <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
                     Reaching Out to All Indonesian Farmers
@@ -47,7 +47,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex h-full relative">
-                <Image src={carousel3} alt="..." className="w-full" />
+                <Image src={carousel3} alt="..." className="w-full" priority/>
                 <div className="border-0">
                   <h1 className="font-bold text-base h-fit lg:text-5xl text-black absolute right-10 top-24 lg:right-20 lg:top-80">
                     7 SOUND Co-Working Space
@@ -106,6 +106,7 @@ export default function HomePage() {
                   src={purwakarta}
                   alt="..."
                   className="w-full xl:h-[450px]"
+                  priority
                 />
                 <p className="pt-3 text-base font-bold lg:text-lg">
                   ------ Purwakarta Site (foto udara) ------
@@ -117,7 +118,8 @@ export default function HomePage() {
                   src={lembang}
                   alt="..."
                   className="w-full xl:h-[450px]"
-                ></Image>
+                  priority
+                />
                 <p className="pt-3 text-base font-bold lg:text-lg">
                   ------ Lembang Site ------
                 </p>
@@ -128,7 +130,8 @@ export default function HomePage() {
                   src={wanayasa}
                   alt="..."
                   className="w-full xl:h-[450px]"
-                ></Image>
+                  priority
+                />
                 <p className="pt-3 text-base font-bold lg:text-lg">
                   ------ Wanayasa Site ------
                 </p>
@@ -203,6 +206,7 @@ export default function HomePage() {
                   src={watermelon}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
+                  priority
                 />
               </div>
             </div>
@@ -247,7 +251,8 @@ export default function HomePage() {
                   src={tomato}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                ></Image>
+                  priority
+                />
               </div>
             </div>
 
@@ -286,7 +291,8 @@ export default function HomePage() {
                   src={pepper}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                ></Image>
+                  priority
+                />
               </div>
             </div>
 
@@ -326,7 +332,8 @@ export default function HomePage() {
                   src={choisum}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                ></Image>
+                  priority
+                />
               </div>
             </div>
 
@@ -380,7 +387,8 @@ export default function HomePage() {
                   src={cucumber}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                ></Image>
+                  priority
+                />
               </div>
             </div>
           </Carousel>
@@ -389,7 +397,7 @@ export default function HomePage() {
       {/* Product end */}
 
       {/* Testimonial start*/}
-      <section className=" pb-16 lg:px-20 lg:pb-24">
+      <section className=" pb-16 lg:px-20">
         <div className="container">
           <div className="flex justify-center items-center">
             <h1 className="font-bold lg:text-3xl lg:pb-5">Testimonials</h1>

@@ -21,7 +21,7 @@ export default function AboutUs() {
             </div>
 
             <div className="pt-20">
-              <Image src={office} alt="..." className="pt-15"></Image>
+              <Image src={office} alt="..." className="pt-15" priority/>
             </div>
 
             <div className="px-10 lg:px-64">
@@ -203,7 +203,7 @@ export default function AboutUs() {
               <div className="p-4 md:w-1/3">
                 <div className="rounded-md shadow-md overflow-hidden">
                   <div className="grid justify-center items-center flex-grow">
-                    <Image src={value1} alt="..."></Image>
+                    <Image src={value1} alt="..."priority/>
                   </div>
                   <h3 className="px-10 text-xl font-semibold text-dark mt-5">
                     FARMERS BEST FRIEND
@@ -220,7 +220,7 @@ export default function AboutUs() {
               <div className="p-4 md:w-1/3">
                 <div className="rounded-md shadow-md overflow-hidden">
                   <div className="grid justify-center items-center flex-grow">
-                    <Image src={value2} alt="..."></Image>
+                    <Image src={value2} alt="..."priority/>
                   </div>
                   <h3 className="px-10 text-xl font-semibold text-dark mt-5">
                     HAPPY AND GRATEFUL EMPLOYEE
@@ -240,7 +240,7 @@ export default function AboutUs() {
               <div className="p-4 md:w-1/3">
                 <div className="rounded-md shadow-md overflow-hidden">
                   <div className="grid justify-center items-center flex-grow">
-                    <Image src={value3} alt="..."></Image>
+                    <Image src={value3} alt="..." priority/>
                   </div>
                   <h3 className="px-10 text-xl font-semibold text-dark mt-5">
                     STRIVE FOR EXCELLENCE

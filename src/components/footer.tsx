@@ -10,9 +10,9 @@ export default function FooterBar() {
     <div>
       {/* {/* Footer 1 */}
       <section>
-        <div className="flex flex-wrap px-10 py-5 lg:px-24">
+        <div className="flex flex-wrap px-10 py-5 lg:pt-20 lg:px-24">
           <div className="flex flex-col w-full lg:w-3/5">
-            <h4 className="font-bold pb-2 text-lg text-green-600">
+            <h4 className="font-bold pb-2 text-base lg:text-lg text-green-600">
               PT EAST WEST SEED INDONESIA
             </h4>
             <div className="flex flex-col lg:flex-row">
@@ -36,7 +36,7 @@ export default function FooterBar() {
           </div>
 
           <div className="flex flex-col w-full lg:w-2/5">
-            <h4 className="font-bold pb-2 text-lg text-green-600">
+            <h4 className="font-bold pb-2 text-base lg:text-lg text-green-600">
               Sitemap
             </h4>
             <div className="flex flex-row">
@@ -68,9 +68,9 @@ export default function FooterBar() {
       <section>
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="flex w-full gap-5 justify-center items-center py-5 lg:justify-start lg:pl-24 lg:w-1/2">
-            <Image src={footer1} alt="..."></Image>
-            <Image src={footer2} alt="..."></Image>
-            <Image src={footer3} alt="..."></Image>
+            <Image src={footer1} alt="..." priority/>
+            <Image src={footer2} alt="..." priority/>
+            <Image src={footer3} alt="..." priority/>
           </div>
 
           <div className="flex w-full items-center justify-center py-5 gap-5 lg:justify-end lg:pr-24 lg:w-1/2">
