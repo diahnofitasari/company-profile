@@ -3,6 +3,7 @@ import { Carousel } from "flowbite-react";
 import React from "react";
 import Image from "next/image";
 import { Card } from "flowbite-react";
+import { Avatar, Blockquote, Rating } from "flowbite-react";
 import carousel1 from "../../../public/images/carousel1.webp";
 import carouselhor1 from "../../../public/images/caroselhor1.webp";
 import carousel2 from "../../../public/images/carousel2.webp";
@@ -17,6 +18,7 @@ import tomato from "../../../public/images/tomato.webp";
 import pepper from "../../../public/images/pepper.webp";
 import choisum from "../../../public/images/choisum.webp";
 import cucumber from "../../../public/images/cucumber.webp";
+import person from "../../../public/images/person-dummy.jpg";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -31,30 +33,69 @@ export default function HomePage() {
               onSlideChange={(index) => console.log("onSlideChange()", index)}
             >
               <div className="flex h-full relative ">
-                <Image priority src={carousel1} alt="..." className="hidden md:block w-[1600px] lg:h-[580px] object cover"/>
-                <Image priority src={carouselhor1} alt="..." className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"/>
+                <Image
+                  priority
+                  src={carousel1}
+                  alt="..."
+                  className="hidden md:block w-[1600px] lg:h-[580px] object cover"
+                />
+                <Image
+                  priority
+                  src={carouselhor1}
+                  alt="..."
+                  className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"
+                />
                 <div className="border-0">
-                  <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-64 lg:left-20 my-0 lg:top-80 bottom-0 absolute" style={{ textShadow: '3px 3px 5px rgba(0,0,0,10)'}}>
+                  <h1
+                    className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-64 lg:left-20 my-0 lg:top-80 bottom-0 absolute"
+                    style={{ textShadow: "3px 3px 5px rgba(0,0,0,10)" }}
+                  >
                     We are always ready to support you
                   </h1>
                 </div>
               </div>
 
               <div className="flex h-full relative">
-                <Image priority src={carousel2} alt="..." className="hidden md:block w-[1600px] lg:h-[580px] object cover"/>
-                <Image priority src={carouselhor2} alt="..." className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"/>
+                <Image
+                  priority
+                  src={carousel2}
+                  alt="..."
+                  className="hidden md:block w-[1600px] lg:h-[580px] object cover"
+                />
+                <Image
+                  priority
+                  src={carouselhor2}
+                  alt="..."
+                  className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"
+                />
                 <div className="border-0">
-                <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-64 lg:left-20 my-0 lg:top-80 bottom-0 absolute" style={{ textShadow: '3px 3px 5px rgba(0,0,0,10)'}}>
+                  <h1
+                    className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-64 lg:left-20 my-0 lg:top-80 bottom-0 absolute"
+                    style={{ textShadow: "3px 3px 5px rgba(0,0,0,10)" }}
+                  >
                     Reaching Out to All Indonesian Farmers
                   </h1>
                 </div>
               </div>
 
               <div className="flex h-full relative">
-                <Image priority src={carousel3} alt="..." className="hidden md:block w-[1600px] lg:h-[580px] object cover"/>
-                <Image priority src={carouselhor3} alt="..." className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"/>
+                <Image
+                  priority
+                  src={carousel3}
+                  alt="..."
+                  className="hidden md:block w-[1600px] lg:h-[580px] object cover"
+                />
+                <Image
+                  priority
+                  src={carouselhor3}
+                  alt="..."
+                  className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"
+                />
                 <div className="border-0">
-                  <h1 className="font-bold text-base h-fit lg:text-5xl text-black absolute right-10 top-64 lg:right-60 lg:top-80" style={{ textShadow: '3px 3px 5px rgba(255,255,255,10)' }}>
+                  <h1
+                    className="font-bold text-base h-fit lg:text-5xl text-black absolute right-10 top-64 lg:right-60 lg:top-80"
+                    style={{ textShadow: "3px 3px 5px rgba(255,255,255,10)" }}
+                  >
                     7 SOUND Co-Working Space
                   </h1>
                 </div>
@@ -108,7 +149,7 @@ export default function HomePage() {
             <Carousel slide={false}>
               <div className="flex flex-col h-full items-center justify-center">
                 <Image
-                   priority
+                  priority
                   src={purwakarta}
                   alt="..."
                   className="w-[288px] h-[200px] lg:w-[1300px] lg:h-[450px] object-cover"
@@ -151,7 +192,10 @@ export default function HomePage() {
       <section className="pt-12 lg:pt-32">
         <h1
           className="flex justify-center items-center flex-wrap px-10 lg:px-40 text-center w-full h:auto font-bold text-base lg:text-2xl h-[300px]"
-          style={{ backgroundImage: "url(/images/background-quotes.png)", textShadow: '3px 3px 5px rgba(255,255,255,10)' }}
+          style={{
+            backgroundImage: "url(/images/background-quotes.png)",
+            textShadow: "3px 3px 5px rgba(255,255,255,10)",
+          }}
         >
           For more than three decades, EWINDO always provides healthy seeds with
           high genetic purity and good germination in order to achieve good
@@ -409,57 +453,112 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-5 justify-center items-center">
-           
-              {/* Tertimoni 1 */}
-              <Card className="max-w-sm">
-                <iframe
-                  className="w-full"
-                  height="200"
-                  src="https://www.youtube.com/embed/XoFhEqWCEdg?si=_ZfswghtZi7TWXE_"
-                  title="Embedded YouTube Video"
-                  loading= "lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
-                <div className="p-4">
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                  Berkah Saat Menjadi Petani Jagung Manis – Kisah Sukses NB SUPER F1 
-                  </p>
+            {/* Tertimoni 1 */}
+            <Card className="max-w-sm">
+              <figure className="max-w-screen-md">
+                <div className="mb-4 flex items-center">
+                  <Rating size="md">
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                  </Rating>
                 </div>
-              </Card>
+                <Blockquote>
+                  <p className="text-base font-semibold text-gray-900 dark:text-white">
+                  "We have been using seed products from PT East West Seed Indonesia for several seasons now, and we are extremely satisfied with the results. The quality of their seeds is exceptional, and we have consistently achieved high yields in our crops. They also exhibit excellent disease resistance, which has helped us minimize crop losses." 
+                  </p>
+                </Blockquote>
+                <figcaption className="mt-6 flex items-center space-x-3">
+                  <Avatar
+                    rounded
+                    size="xs"
+                    img="/images/person-dummy.jpg"
+                    alt="profile picture"
+                  />
+                  <div className="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+                    <cite className="pr-3 font-medium text-gray-900 dark:text-white">
+                      Kasori
+                    </cite>
+                    <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">
+                      Farmer from Brebes
+                    </cite>
+                  </div>
+                </figcaption>
+              </figure>
+            </Card>
 
-              {/* Testimoni 2 */}
-              <Card className="max-w-sm">
-                <iframe
-                  className="w-full"
-                  height="200"
-                  src="https://www.youtube.com/embed/R_isYzLZWB4?si=aLmOPSrr_ZzHfpdz"
-                  title="Embedded YouTube Video"
-                  loading= "lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
-                <div className="p-4">
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                  Menjadi Berkah Untuk Warga Karena Sukses Tanam Cabai BAJA F1
-                  </p>
+            {/* Testimoni 2 */}
+            <Card className="max-w-sm">
+              <figure className="max-w-screen-md">
+                <div className="mb-4 flex items-center">
+                  <Rating size="md">
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                  </Rating>
                 </div>
-              </Card>
-              {/* Testimoni 3 */}
-              <Card className="max-w-sm">
-                <iframe
-                  className="w-full"
-                  height="200"
-                  src="https://www.youtube.com/embed/FbD89wBs8TM?si=bXNtHQNLby1FNIbr"
-                  title="Embedded YouTube Video"
-                  loading= "lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
-                <div className="p-4">
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                  Kisah Sukses Petani Budidaya Bawang Merah Dari Biji (TSS) 
+                <Blockquote>
+                  <p className="text-base font-semibold text-gray-900 dark:text-white">
+                  "Our farm has been relying on seed products from PT East West Seed Indonesia for many years, and we couldn't be happier with the results. The seeds consistently germinate well and produce healthy, vigorous plants. We've noticed improved crop uniformity and higher yields compared to other seed brands we've tried in the past."
                   </p>
+                </Blockquote>
+                <figcaption className="mt-6 flex items-center space-x-3">
+                  <Avatar
+                    rounded
+                    size="xs"
+                    img="/images/person-dummy.jpg"
+                    alt="profile picture"
+                  />
+                  <div className="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+                    <cite className="pr-3 font-medium text-gray-900 dark:text-white">
+                      Mentari
+                    </cite>
+                    <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">
+                      Farm Owner Seni Tani
+                    </cite>
+                  </div>
+                </figcaption>
+              </figure>
+            </Card>
+            {/* Testimoni 3 */}
+            <Card className="max-w-sm">
+              <figure className="max-w-screen-md">
+                <div className="mb-4 flex items-center">
+                  <Rating size="md">
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                    <Rating.Star />
+                  </Rating>
                 </div>
-              </Card>
-
+                <Blockquote>
+                  <p className="text-base font-semibold text-gray-900 dark:text-white">
+                  "As a long-time customer of PT East West Seed Indonesia, I can confidently say that their seed products have greatly contributed to the success of our farming operation. The seeds consistently exhibit strong germination rates and produce robust plants that withstand various environmental conditions."
+                  </p>
+                </Blockquote>
+                <figcaption className="mt-6 flex items-center space-x-3">
+                  <Avatar
+                    rounded
+                    size="xs"
+                    img="/images/person-dummy.jpg"
+                    alt="profile picture"
+                  />
+                  <div className="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+                    <cite className="pr-3 font-medium text-gray-900 dark:text-white">
+                      Hanita
+                    </cite>
+                    <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">
+                    Agriculture Enthusiast
+                    </cite>
+                  </div>
+                </figcaption>
+              </figure>
+            </Card>
           </div>
         </div>
       </section>
