@@ -21,7 +21,7 @@ export default function AboutUs() {
             </div>
 
             <div className="pt-20">
-              <Image src={office} alt="..." className="pt-15 w-[400px] h-auto lg:w-[970px] lg:h-[400px]" priority/>
+              <Image priority src={office} alt="..." className="pt-15 w-[400px] h-auto lg:w-[970px] lg:h-[400px]"/>
             </div>
 
             <div className="px-10 lg:px-64">
