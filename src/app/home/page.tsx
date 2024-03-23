@@ -417,6 +417,8 @@ export default function HomePage() {
                   height="200"
                   src="https://www.youtube.com/embed/XoFhEqWCEdg?si=_ZfswghtZi7TWXE_"
                   title="Embedded YouTube Video"
+                  loading= "lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 ></iframe>
                 <div className="p-4">
                   <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -432,6 +434,8 @@ export default function HomePage() {
                   height="200"
                   src="https://www.youtube.com/embed/R_isYzLZWB4?si=aLmOPSrr_ZzHfpdz"
                   title="Embedded YouTube Video"
+                  loading= "lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 ></iframe>
                 <div className="p-4">
                   <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -446,6 +450,8 @@ export default function HomePage() {
                   height="200"
                   src="https://www.youtube.com/embed/FbD89wBs8TM?si=bXNtHQNLby1FNIbr"
                   title="Embedded YouTube Video"
+                  loading= "lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 ></iframe>
                 <div className="p-4">
                   <p className="font-normal text-gray-700 dark:text-gray-400">

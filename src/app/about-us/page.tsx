@@ -283,7 +283,7 @@ export default function AboutUs() {
                 width: "100%",
                 height: "100%",
               }}
-              allow="autoplay; encrypted-media"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
           </div>
         </div>
