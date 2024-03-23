@@ -1,8 +1,8 @@
 "use client";
-import { Button, Timeline } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { Timeline } from "flowbite-react";
+import { HiCalendar } from "react-icons/hi";
 import Image from "next/image";
-import office from "../../../public/images/office.jpg";
+import office from "../../../public/images/office.webp";
 import value1 from "../../../public/images/value1.png";
 import value2 from "../../../public/images/value2.png";
 import value3 from "../../../public/images/value3.png";
@@ -21,11 +21,11 @@ export default function AboutUs() {
             </div>
 
             <div className="pt-20">
-              <Image src={office} alt="..." className="pt-15" priority/>
+              <Image src={office} alt="..." className="pt-15 w-[400px] h-auto lg:w-[970px] lg:h-[400px]" priority/>
             </div>
 
             <div className="px-10 lg:px-64">
-              <p className="text-base text-justify pt-5 relative">
+              <p className="text-base text-justify pt-10 relative">
                 PT EAST WEST SEED INDONESIA (EWINDO) is the first integrated
                 vegetable seed company in Indonesia that keeps its commitment as
                 Farmers Best Friend. EWINDO produces the best high-quality

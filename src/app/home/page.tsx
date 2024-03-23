@@ -3,17 +3,20 @@ import { Carousel } from "flowbite-react";
 import React from "react";
 import Image from "next/image";
 import { Card } from "flowbite-react";
-import carousel1 from "../../../public/images/carousel1.jpg";
-import carousel2 from "../../../public/images/carousel2.jpg";
-import carousel3 from "../../../public/images/carousel3.jpg";
-import purwakarta from "../../../public/images/Purwakarta.jpg";
-import lembang from "../../../public/images/Lembang.jpg";
-import wanayasa from "../../../public/images/Wanayasa.jpg";
-import watermelon from "../../../public/images/watermelon.jpg";
-import tomato from "../../../public/images/tomato.png";
-import pepper from "../../../public/images/pepper.png";
-import choisum from "../../../public/images/choisum.png";
-import cucumber from "../../../public/images/cucumber.png";
+import carousel1 from "../../../public/images/carousel1.webp";
+import carouselhor1 from "../../../public/images/caroselhor1.webp";
+import carousel2 from "../../../public/images/carousel2.webp";
+import carouselhor2 from "../../../public/images/carouselhor2.webp";
+import carousel3 from "../../../public/images/carousel3.webp";
+import carouselhor3 from "../../../public/images/carouselhor3.webp";
+import purwakarta from "../../../public/images/Purwakarta.webp";
+import lembang from "../../../public/images/Lembang.webp";
+import wanayasa from "../../../public/images/Wanayasa.webp";
+import watermelon from "../../../public/images/watermelon.webp";
+import tomato from "../../../public/images/tomato.webp";
+import pepper from "../../../public/images/pepper.webp";
+import choisum from "../../../public/images/choisum.webp";
+import cucumber from "../../../public/images/cucumber.webp";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -23,33 +26,35 @@ export default function HomePage() {
       <section id="hero-banner-slider" className="pt-15">
         <div id="hero-slider">
           {/* Carousel Image size for dekstop: 1600x580 px*/}
-          {/* xl:w-[1600px] 2xl:h-[580px] 2xl:w-[1600px] */}
-          <div className="h-56 sm:h-64 xl:h-[580px] ">
+          <div className="w-400 h-auto lg:w-screen lg:h-[580px] ">
             <Carousel
               onSlideChange={(index) => console.log("onSlideChange()", index)}
             >
               <div className="flex h-full relative ">
-                <Image src={carousel1} alt="..." className="w-full" priority/>
+                <Image priority src={carousel1} alt="..." className="hidden md:block w-[1600px] lg:h-[580px] object cover"/>
+                <Image priority src={carouselhor1} alt="..." className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"/>
                 <div className="border-0">
-                  <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
+                  <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-64 lg:left-20 my-0 lg:top-80 bottom-0 absolute" style={{ textShadow: '3px 3px 5px rgba(0,0,0,10)'}}>
                     We are always ready to support you
                   </h1>
                 </div>
               </div>
 
               <div className="flex h-full relative">
-                <Image src={carousel2} alt="..." className="w-full" priority/>
+                <Image priority src={carousel2} alt="..." className="hidden md:block w-[1600px] lg:h-[580px] object cover"/>
+                <Image priority src={carouselhor2} alt="..." className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"/>
                 <div className="border-0">
-                  <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-24 lg:left-20 my-0 lg:top-80 bottom-0 absolute">
+                <h1 className="font-bold text-base h-fit lg:text-5xl text-white left-10 top-64 lg:left-20 my-0 lg:top-80 bottom-0 absolute" style={{ textShadow: '3px 3px 5px rgba(0,0,0,10)'}}>
                     Reaching Out to All Indonesian Farmers
                   </h1>
                 </div>
               </div>
 
               <div className="flex h-full relative">
-                <Image src={carousel3} alt="..." className="w-full" priority/>
+                <Image priority src={carousel3} alt="..." className="hidden md:block w-[1600px] lg:h-[580px] object cover"/>
+                <Image priority src={carouselhor3} alt="..." className=" block md:hidden object-cover sm:w-[400px] sm:h-auto object cover"/>
                 <div className="border-0">
-                  <h1 className="font-bold text-base h-fit lg:text-5xl text-black absolute right-10 top-24 lg:right-20 lg:top-80">
+                  <h1 className="font-bold text-base h-fit lg:text-5xl text-black absolute right-10 top-64 lg:right-60 lg:top-80" style={{ textShadow: '3px 3px 5px rgba(255,255,255,10)' }}>
                     7 SOUND Co-Working Space
                   </h1>
                 </div>
@@ -99,40 +104,40 @@ export default function HomePage() {
       {/* Site Carousel start*/}
       <section className="pt-4 lg:pt-32">
         <div>
-          <div className="h-56  w-screen sm:h-64 xl:px-20 xl:h-[480px] 2xl:h-[480px]">
+          <div className="w-full h-[230px] lg:px-20 lg:h-[480px]">
             <Carousel slide={false}>
               <div className="flex flex-col h-full items-center justify-center">
                 <Image
+                   priority
                   src={purwakarta}
                   alt="..."
-                  className="w-full xl:h-[450px]"
-                  priority
+                  className="w-[288px] h-[200px] lg:w-[1300px] lg:h-[450px] object-cover"
                 />
-                <p className="pt-3 text-base font-bold lg:text-lg">
+                <p className="pt-3 text-sm font-bold lg:text-lg">
                   ------ Purwakarta Site (foto udara) ------
                 </p>
               </div>
 
               <div className="flex flex-col h-full items-center justify-center">
                 <Image
+                  priority
                   src={lembang}
                   alt="..."
-                  className="w-full xl:h-[450px]"
-                  priority
+                  className="w-[288px] h-[200px] lg:w-[1300px] lg:h-[450px] object-cover"
                 />
-                <p className="pt-3 text-base font-bold lg:text-lg">
+                <p className="pt-3 text-sm font-bold lg:text-lg">
                   ------ Lembang Site ------
                 </p>
               </div>
 
               <div className="flex flex-col h-full items-center justify-center">
                 <Image
+                  priority
                   src={wanayasa}
                   alt="..."
-                  className="w-full xl:h-[450px]"
-                  priority
+                  className="w-[288px] h-[200px] lg:w-[1300px] lg:h-[450px] object-cover"
                 />
-                <p className="pt-3 text-base font-bold lg:text-lg">
+                <p className="pt-3 text-sm font-bold lg:text-lg">
                   ------ Wanayasa Site ------
                 </p>
               </div>
@@ -144,15 +149,15 @@ export default function HomePage() {
 
       {/* Quotes start recomendation images width="1600" height="800"*/}
       <section className="pt-12 lg:pt-32">
-        <div
-          className="flex justify-center items-center flex-wrap px-10 lg:px-40 text-center w-full h:auto text-base lg:text-2xl h-[300px]"
-          style={{ backgroundImage: "url(/images/background-quotes.png)" }}
+        <h1
+          className="flex justify-center items-center flex-wrap px-10 lg:px-40 text-center w-full h:auto font-bold text-base lg:text-2xl h-[300px]"
+          style={{ backgroundImage: "url(/images/background-quotes.png)", textShadow: '3px 3px 5px rgba(255,255,255,10)' }}
         >
           For more than three decades, EWINDO always provides healthy seeds with
           high genetic purity and good germination in order to achieve good
           results aligning with the consumers wants and becoming the key to
           success for Indonesian Farmers.
-        </div>
+        </h1>
       </section>
       {/* Quotes end*/}
 
@@ -167,7 +172,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="pt-5 h-[900px] lg:h-[620px]">
+        <div className="pt-5 h-[900px] lg:h-[720px]">
           <Carousel slide={false}>
             {/* Semangka */}
             <div className="container">
@@ -203,10 +208,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Image
+                  priority
                   src={watermelon}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                  priority
                 />
               </div>
             </div>
@@ -248,10 +253,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Image
+                  priority
                   src={tomato}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                  priority
                 />
               </div>
             </div>
@@ -288,10 +293,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Image
+                  priority
                   src={pepper}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                  priority
                 />
               </div>
             </div>
@@ -329,10 +334,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Image
+                  priority
                   src={choisum}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                  priority
                 />
               </div>
             </div>
@@ -384,10 +389,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Image
+                  priority
                   src={cucumber}
                   alt="..."
                   className="w-[300px] h-auto lg:w-[550px]"
-                  priority
                 />
               </div>
             </div>
