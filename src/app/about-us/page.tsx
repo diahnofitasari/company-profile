@@ -259,36 +259,6 @@ export default function AboutUs() {
         </div>
       </section>
       {/* Company Values end*/}
-
-      {/* Video Profile start*/}
-      <section className="lg:px-64">
-        <div
-          className="flex justify-center items-center"
-          style={{ padding: "64px", maxWidth: "100%" }}
-        >
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              paddingTop: "56.25%",
-            }}
-          >
-            <iframe
-              loading="lazy"
-              src="https://www.youtube.com/embed/t52Qaf0Nm1k?si=mJZeNbWUtfGaNd5K"
-              style={{
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "100%",
-                height: "100%",
-              }}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-      {/* Video Profile end*/}
     </div>
   );
 }
